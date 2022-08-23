@@ -838,3 +838,917 @@ footer {
     }
   }
 }
+@media screen and (max-width: 439px) {
+  nav {
+    padding: 1.5rem 0;
+    //   position: fixed;
+    //   background-color: #fff;
+    //   width: 100%;
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .left-menu {
+        display: none;
+      }
+      .menu-button {
+        display: block;
+        button {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          border: none;
+          background-color: transparent;
+          color: #1a2d40;
+          &.manuicons span {
+            transform: translateX(60px);
+          }
+
+          &.manuicons span:nth-child(1) {
+            transform: translateY(0px);
+            width: 20px;
+            transform: rotate(50deg);
+          }
+
+          &.manuicons span:nth-child(2) {
+            transform: translateY(0px);
+            width: 20px;
+            transform: rotate(128deg);
+          }
+
+          & span {
+            position: absolute;
+            width: 20px;
+            height: 2.5px;
+            background-color: #1a2d40;
+            border-radius: 4px;
+            transition: 0.5s;
+            right: 15px;
+
+            &:nth-child(1) {
+              transform: translateY(-8px);
+              width: 20px;
+              left: 15px;
+            }
+
+            &:nth-child(2) {
+              transform: translateY(8px);
+              width: 20px;
+              left: 15px;
+            }
+          }
+        }
+      }
+      .logo {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .right-menu {
+        ul {
+          li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 1.5rem 0 0;
+            a {
+              font-size: 1.2rem;
+              text-decoration: none;
+              text-transform: capitalize;
+              color: #00000087;
+              font-weight: 100;
+            }
+            .mobile-n {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-head {
+    background-color: #c19a67 !important;
+    text-align: center;
+    padding: 0.5rem 0;
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #fff;
+    }
+    .pra {
+      font-size: 0.6rem;
+      line-height: 1rem;
+    }
+  }
+
+  .banner {
+    background-image: url("https://images.tailorstore.com/YToyOntzOjU6IndpZHRoIjtzOjQ6IjIwMDAiO3M6NjoiaGVpZ2h0IjtzOjA6IiI7fQ%3D%3D/images/cms/tailor-store-major-lines-2021.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .banner-info {
+      padding: 15rem 0 4rem 2rem;
+      h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        color: #000;
+      }
+      .imges-rate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        padding-bottom: 3rem;
+        img {
+          width: 25%;
+        }
+        .mobile-n {
+          display: none;
+        }
+        .mobile-d {
+          display: block;
+        }
+        h4 {
+          font-size: 1.5rem;
+          color: #000;
+        }
+      }
+      a {
+        background-color: #1a2d40;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .hero-alam {
+    display: none;
+    background-color: #c19a67;
+    text-align: center;
+    padding: 1rem 0;
+    ul {
+      li {
+        list-style: none;
+        display: inline;
+        padding: 0 2rem;
+        a {
+          font-size: 1.5rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: capitalize;
+          font-weight: 400;
+          i {
+            padding-right: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .hero-alam-mobile {
+    display: block;
+    background-color: #c19a67;
+    text-align: center;
+    padding: 1rem 0;
+    .iteam {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: flex-start;
+      h2 {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 400;
+        i {
+          padding-right: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-color: #1a2d40;
+    padding: 5rem 2rem;
+    .about-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      row-gap: 3rem;
+      .about-info {
+        text-align: center;
+        h1 {
+          font-size: 2rem;
+          color: #fff;
+          padding-bottom: 1.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+      .about-list {
+        .items {
+          padding-bottom: 2rem;
+          flex-direction: column;
+          text-align: center;
+          .imge {
+            text-align: center;
+            img {
+              width: 80%;
+            }
+          }
+          .info {
+            h2 {
+              font-size: 1.6rem;
+              color: #fff;
+              font-weight: 600;
+              letter-spacing: 1px;
+              padding-bottom: 1rem;
+            }
+            p {
+              font-size: 1rem;
+              color: #fff;
+              font-weight: 200;
+              line-height: 1.5rem;
+            }
+            .pra {
+              padding-bottom: 5rem;
+            }
+            a {
+              border: 1px solid #fff;
+              color: #fff;
+              text-decoration: none;
+              text-transform: capitalize;
+              padding: 0.7rem 2rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .news {
+    padding: 1rem 0 5rem;
+    h2 {
+      font-size: 2rem;
+      padding: 1rem;
+      letter-spacing: 1px;
+    }
+    .img-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      padding: 0 1rem;
+      .items {
+        img {
+          width: 100%;
+        }
+        h1 {
+          font-size: 1rem;
+          padding: 1rem 0;
+          letter-spacing: 1px;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .banner-video {
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 0.7315301120448179) 0%,
+        rgba(121, 9, 54, 0.958420868347339) 0%,
+        rgba(30, 75, 105, 1) 0%,
+        rgba(0, 0, 0, 0.39) 0%,
+        rgba(0, 0, 0, 0.219) 100%,
+        rgba(189, 193, 194, 0.8603816526610644) 100%
+      ),
+      url("https://images.tailorstore.com/YToyOntzOjU6IndpZHRoIjtzOjQ6IjIwMDAiO3M6NjoiaGVpZ2h0IjtzOjA6IiI7fQ%3D%3D/images/cms/TS-SizeMe-Website.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .bestsell {
+    padding: 1rem 0 5rem;
+    h1 {
+      text-align: center;
+      padding: 1rem 0 2rem;
+      font-size: 1.5rem;
+    }
+    .imgwrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      column-gap: 1rem;
+      padding: 0 1rem;
+      text-align: center;
+      row-gap: 2rem;
+      .items {
+        img {
+          width: 100%;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          span {
+            font-size: 0.9rem;
+          }
+        }
+        .rate {
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 30%;
+          }
+          h2 {
+            font-size: 1.3rem;
+            font-weight: 100;
+          }
+        }
+        .button {
+          display: flex;
+          button {
+            background-color: #1a2d40;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            padding: 0.7rem 1rem;
+            letter-spacing: 1px;
+            margin-right: 0.5rem;
+          }
+          a {
+            padding: 0.7rem 0.7rem;
+            border: 1px solid #1a2d40;
+            color: #1a2d40;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #1a2d40;
+    padding: 2rem 0;
+    .footer-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: baseline;
+      align-items: stretch;
+      padding-bottom: 2rem;
+      row-gap: 2rem;
+      .footer-menu {
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 1rem;
+              line-height: 2rem;
+            }
+          }
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: #fff;
+          padding-bottom: 2rem;
+        }
+        button {
+          border: none;
+          background-color: #c19a67;
+          color: #fff;
+          padding: 0.7rem 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+    .footer-bottom {
+      border-top: 1px solid #fff;
+      padding: 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      row-gap: 0.5rem;
+      .social-media {
+        ul {
+          li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 0.5rem;
+            a {
+              font-size: 1rem;
+
+              color: #fff;
+            }
+          }
+        }
+      }
+      .reserved {
+        text-align: center;
+        font-size: 0.5rem;
+        color: #fff;
+      }
+      .pay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        .pay-img {
+          img {
+            width: 100%;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  nav {
+    padding: 1.5rem 0;
+    //   position: fixed;
+    //   background-color: #fff;
+    //   width: 100%;
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .left-menu {
+        display: none;
+      }
+      .menu-button {
+        display: block;
+        button {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          border: none;
+          background-color: transparent;
+          color: #1a2d40;
+          &.manuicons span {
+            transform: translateX(60px);
+          }
+
+          &.manuicons span:nth-child(1) {
+            transform: translateY(0px);
+            width: 20px;
+            transform: rotate(50deg);
+          }
+
+          &.manuicons span:nth-child(2) {
+            transform: translateY(0px);
+            width: 20px;
+            transform: rotate(128deg);
+          }
+
+          & span {
+            position: absolute;
+            width: 20px;
+            height: 2.5px;
+            background-color: #1a2d40;
+            border-radius: 4px;
+            transition: 0.5s;
+            right: 15px;
+
+            &:nth-child(1) {
+              transform: translateY(-8px);
+              width: 20px;
+              left: 15px;
+            }
+
+            &:nth-child(2) {
+              transform: translateY(8px);
+              width: 20px;
+              left: 15px;
+            }
+          }
+        }
+      }
+      .logo {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .right-menu {
+        ul {
+          li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 1.5rem 0 0;
+            a {
+              font-size: 1rem;
+              text-decoration: none;
+              text-transform: capitalize;
+              color: #00000087;
+              font-weight: 100;
+            }
+            .mobile-n {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-head {
+    background-color: #c19a67 !important;
+    text-align: center;
+    padding: 0.5rem 0;
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #fff;
+    }
+    .pra {
+      font-size: 0.6rem;
+      line-height: 1rem;
+    }
+  }
+
+  .banner {
+    background-image: url("https://images.tailorstore.com/YToyOntzOjU6IndpZHRoIjtzOjQ6IjIwMDAiO3M6NjoiaGVpZ2h0IjtzOjA6IiI7fQ%3D%3D/images/cms/tailor-store-major-lines-2021.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .banner-info {
+      padding: 15rem 0 4rem 2rem;
+      h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        color: #000;
+      }
+      .imges-rate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        padding-bottom: 3rem;
+        img {
+          width: 25%;
+        }
+        .mobile-n {
+          display: none;
+        }
+        .mobile-d {
+          display: block;
+        }
+        h4 {
+          font-size: 1.5rem;
+          color: #000;
+        }
+      }
+      a {
+        background-color: #1a2d40;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .hero-alam {
+    display: none;
+    background-color: #c19a67;
+    text-align: center;
+    padding: 1rem 0;
+    ul {
+      li {
+        list-style: none;
+        display: inline;
+        padding: 0 2rem;
+        a {
+          font-size: 1.5rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: capitalize;
+          font-weight: 400;
+          i {
+            padding-right: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .hero-alam-mobile {
+    display: block;
+    background-color: #c19a67;
+    text-align: center;
+    padding: 1rem 0;
+    .iteam {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: flex-start;
+      h2 {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 400;
+        i {
+          padding-right: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-color: #1a2d40;
+    padding: 5rem 2rem;
+    .about-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      row-gap: 3rem;
+      .about-info {
+        text-align: center;
+        h1 {
+          font-size: 2rem;
+          color: #fff;
+          padding-bottom: 1.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+      .about-list {
+        .items {
+          padding-bottom: 2rem;
+          flex-direction: column;
+          text-align: center;
+          .imge {
+            text-align: center;
+            img {
+              width: 80%;
+            }
+          }
+          .info {
+            h2 {
+              font-size: 1.6rem;
+              color: #fff;
+              font-weight: 600;
+              letter-spacing: 1px;
+              padding-bottom: 1rem;
+            }
+            p {
+              font-size: 1rem;
+              color: #fff;
+              font-weight: 200;
+              line-height: 1.5rem;
+            }
+            .pra {
+              padding-bottom: 5rem;
+            }
+            a {
+              border: 1px solid #fff;
+              color: #fff;
+              text-decoration: none;
+              text-transform: capitalize;
+              padding: 0.7rem 2rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .news {
+    padding: 1rem 0 5rem;
+    h2 {
+      font-size: 2rem;
+      padding: 1rem;
+      letter-spacing: 1px;
+    }
+    .img-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      padding: 0 1rem;
+      .items {
+        img {
+          width: 100%;
+        }
+        h1 {
+          font-size: 1rem;
+          padding: 1rem 0;
+          letter-spacing: 1px;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .banner-video {
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 0.7315301120448179) 0%,
+        rgba(121, 9, 54, 0.958420868347339) 0%,
+        rgba(30, 75, 105, 1) 0%,
+        rgba(0, 0, 0, 0.39) 0%,
+        rgba(0, 0, 0, 0.219) 100%,
+        rgba(189, 193, 194, 0.8603816526610644) 100%
+      ),
+      url("https://images.tailorstore.com/YToyOntzOjU6IndpZHRoIjtzOjQ6IjIwMDAiO3M6NjoiaGVpZ2h0IjtzOjA6IiI7fQ%3D%3D/images/cms/TS-SizeMe-Website.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .bestsell {
+    padding: 1rem 0 5rem;
+    h1 {
+      text-align: center;
+      padding: 1rem 0 2rem;
+      font-size: 1.5rem;
+    }
+    .imgwrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      column-gap: 1rem;
+      padding: 0 1rem;
+      text-align: center;
+      row-gap: 2rem;
+      .items {
+        img {
+          width: 100%;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          span {
+            font-size: 0.5rem;
+          }
+        }
+        .rate {
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 40%;
+          }
+          h2 {
+            font-size: 1rem;
+            font-weight: 100;
+          }
+        }
+        .button {
+          display: flex;
+          button {
+            background-color: #1a2d40;
+            font-size: 0.8rem;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 0.7rem;
+            letter-spacing: 1px;
+            margin-right: 1rem;
+          }
+          a {
+            padding: 0.5rem 0.7rem;
+            border: 1px solid #1a2d40;
+            color: #1a2d40;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #1a2d40;
+    padding: 2rem 0;
+    .footer-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: baseline;
+      align-items: stretch;
+      padding-bottom: 2rem;
+      row-gap: 2rem;
+      .footer-menu {
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 1rem;
+              line-height: 2rem;
+            }
+          }
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: #fff;
+          padding-bottom: 2rem;
+        }
+        button {
+          border: none;
+          background-color: #c19a67;
+          color: #fff;
+          padding: 0.7rem 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+    .footer-bottom {
+      border-top: 1px solid #fff;
+      padding: 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      row-gap: 0.5rem;
+      .social-media {
+        ul {
+          li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 0.5rem;
+            a {
+              font-size: 1rem;
+
+              color: #fff;
+            }
+          }
+        }
+      }
+      .reserved {
+        text-align: center;
+        font-size: 0.5rem;
+        color: #fff;
+      }
+      .pay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        .pay-img {
+          img {
+            width: 100%;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}

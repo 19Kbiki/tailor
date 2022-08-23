@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("http://fonts.cdnfonts.com/css/neue-hans-kendrick");
+@font-face {
+  font-family: "Neue Hans Kendrick";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Neue Hans Kendrick"),
+    url("https://fonts.cdnfonts.com/s/19488/NeueHansKendrick-Regular.woff")
+      format("woff");
+}
 * {
   margin: 0;
   padding: 0;
